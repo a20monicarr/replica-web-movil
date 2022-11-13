@@ -1,1 +1,55 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  margin: 3%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+nav ul li {
+  margin: 5%;
+}
+nav ul li button {
+  padding: 20%;
+}
+
+#mensaje {
+  font-family: Mulish;
+}
+
+#parte_1, #parte_3 {
+  display: flex;
+}
+
+img {
+  width: 35%;
+  background: linear-gradient();
+}
+
+#copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#copy h6 {
+  padding: 1%;
+}
+
+#terms {
+  display: flex;
+  justify-content: center;
+}
+#terms li {
+  list-style: none;
+}/*# sourceMappingURL=style.css.map */
