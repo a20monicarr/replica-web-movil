@@ -6,25 +6,37 @@
 // Variables 
 
 
-$color-letra: white;
-$color-fondo: blue;
+$color-primary: white;
+$color-secondary: blue;
 $color-footer: black;
+
+// Mixins 
+
+@mixin flex ($display, $just-cont, $align) {
+   display: $display;
+   justify-content: $just-cont;
+   align-items: $align;
+}
 
 // Etiquetas
 
 nav {
-   margin: 3%;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
+   margin: 0;
+   width: 100%;
+   background-color: $color-primary;
+   @include flex(flex, space-around, center);
    list-style: none;
+   position: fixed;
+   #logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+   }
    ul {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include flex(flex, center, center);
       list-style: none;
       li {
-        margin: 5%;
+        margin-right: 5%;
+        margin-left: 5%;
       }
    }
 }
@@ -34,16 +46,16 @@ h1 {
 }
 
 h2 {
-   color: $color-letra;
+   color: $color-primary;
 }
 
-img  {
-   width: 35%;
-   background: linear-gradient();
+img {
+   margin-top: 11%;
+   width: 45%;
 }
 
 footer {
-   color: $color-letra;
+   color: $color-primary;
    background-color: $color-footer;
 }
 
@@ -58,23 +70,20 @@ footer {
 #mensaje {
    font-family: Mulish;
 }
+
 #parte_1, #parte_3 {
-   display: flex;
+   @include flex(flex , justify-content, center );
 }
 
 #copy {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   @include flex(flex, center, center);
    h6 {
       padding: 1%;
    }
 }
 
 #terms {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   @include flex(flex, center, center );
    li {
       list-style: none;
    }
@@ -84,7 +93,7 @@ footer {
 
 // Botones
 
-%btn {
+.btn {
    border-radius: 20px;
    padding: 0.7em 1.5em;
    margin-right: 10px;
@@ -95,15 +104,18 @@ footer {
 }
 
 .btn-enviar {
-   @extend %btn;
-   color: $color-letra;
-   background-color: $color-fondo;
+   @extend .btn;
+   color: $color-primary;
+   background-color: $color-secondary;
 }
 
 .btn-factoria {
-   @extend %btn;
-   color: $color-letra;
-   border-bottom: $color-letra;
+   @extend .btn;
+   color: $color-primary;
+   border-bottom: $color-primary;
    background-color: transparent;
 
 }
+
+
+
