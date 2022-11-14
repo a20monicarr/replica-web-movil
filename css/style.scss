@@ -7,6 +7,8 @@
 
 
 $color-letra: white;
+$color-fondo: blue;
+$color-footer: black;
 
 // Etiquetas
 
@@ -38,6 +40,11 @@ h2 {
 img  {
    width: 35%;
    background: linear-gradient();
+}
+
+footer {
+   color: $color-letra;
+   background-color: $color-footer;
 }
 
 // Selectores id
@@ -90,7 +97,7 @@ img  {
 .btn-enviar {
    @extend %btn;
    color: $color-letra;
-   background-color: blue;
+   background-color: $color-fondo;
 }
 
 .btn-factoria {

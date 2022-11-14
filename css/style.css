@@ -34,6 +34,11 @@ img {
   background: linear-gradient();
 }
 
+footer {
+  color: white;
+  background-color: black;
+}
+
 #parte_2 {
   background-image: url("../resource/img/escritorio.jpg");
   background-size: cover;
