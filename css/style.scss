@@ -21,7 +21,6 @@ $color-footer: black;
 // Etiquetas
 
 nav {
-   margin: 0;
    width: 100%;
    background-color: $color-primary;
    @include flex(flex, space-around, center);
@@ -42,15 +41,22 @@ nav {
 }
 
 h1 {
-   font-size: 3rem;
+   font-size: 4rem;
+   margin-bottom: 6%;
+   text-align: left;
 }
 
 h2 {
    color: $color-primary;
+   font-size: 3rem;
+   
 }
 
+h3 {
+   text-align: left;
+}
 img {
-   margin-top: 11%;
+   margin-top: 25%;
    width: 45%;
 }
 
@@ -61,6 +67,12 @@ footer {
 
 // Selectores id
 
+#parte_1, #parte_3 {
+   @include flex(flex , center, center);
+   margin: 3%;
+   text-align: center;
+}
+
 #parte_2 {
    background-image: url("../resource/img/escritorio.jpg");
    background-size: cover;
@@ -68,11 +80,9 @@ footer {
 }
 
 #mensaje {
+   margin: 10%;
+   text-align: center;
    font-family: Mulish;
-}
-
-#parte_1, #parte_3 {
-   @include flex(flex , justify-content, center );
 }
 
 #copy {
@@ -90,7 +100,9 @@ footer {
 }
 
 // Selectores clase
-
+.imagen {
+   margin-left: 5% ;
+}
 // Botones
 
 .btn {

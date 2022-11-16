@@ -5,7 +5,6 @@
 }
 
 nav {
-  margin: 0;
   width: 100%;
   background-color: white;
   display: flex;
@@ -30,21 +29,36 @@ nav ul li {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
+  margin-bottom: 6%;
+  text-align: left;
 }
 
 h2 {
   color: white;
+  font-size: 3rem;
+}
+
+h3 {
+  text-align: left;
 }
 
 img {
-  margin-top: 11%;
+  margin-top: 25%;
   width: 45%;
 }
 
 footer {
   color: white;
   background-color: black;
+}
+
+#parte_1, #parte_3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+  text-align: center;
 }
 
 #parte_2 {
@@ -54,13 +68,9 @@ footer {
 }
 
 #mensaje {
+  margin: 10%;
+  text-align: center;
   font-family: Mulish;
-}
-
-#parte_1, #parte_3 {
-  display: flex;
-  justify-content: justify-content;
-  align-items: center;
 }
 
 #copy {
@@ -79,6 +89,10 @@ footer {
 }
 #terms li {
   list-style: none;
+}
+
+.imagen {
+  margin-left: 5%;
 }
 
 .btn, .btn-factoria, .btn-enviar {
