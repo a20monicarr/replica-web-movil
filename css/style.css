@@ -12,6 +12,7 @@ nav {
   align-items: center;
   list-style: none;
   position: fixed;
+  z-index: 4;
 }
 nav #logo {
   font-size: 1.5rem;
@@ -46,6 +47,10 @@ img {
 footer {
   color: white;
   background-color: black;
+  padding: 3%;
+}
+footer li {
+  padding-right: 2%;
 }
 
 #parte_1, #parte_3 {
@@ -101,6 +106,9 @@ footer {
   font-weight: 500;
   cursor: pointer;
 }
+.btn a, .btn-factoria a, .btn-enviar a {
+  text-decoration: none;
+}
 
 .btn-enviar {
   padding: auto;
@@ -114,14 +122,10 @@ footer {
   background-color: transparent;
 }
 
-.imagen {
-  margin-top: 10%;
-}
-
 .posicion-1 {
   margin-right: 50%;
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  width: 350px;
   background-color: blue;
   border-radius: 100%;
   position: absolute;
@@ -146,6 +150,7 @@ footer {
 }
 
 .imagen {
+  margin-top: 12%;
   margin-right: 30%;
   margin-bottom: 40%;
 }
@@ -156,32 +161,51 @@ footer {
 }
 
 .menu a {
-  text-decoration: none;
   color: white;
 }
 
-.bi-phone, .bi-camera, .bi-gift, .bi-patch-check {
-  font-size: 80px;
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-container .items {
+  padding: 5%;
+  margin: 10%;
+}
+.flex-container .items h3 {
+  font-size: 24px;
+  text-align: center;
+  margin: 5%;
+}
+.flex-container .items .bi {
+  font-size: 4rem;
   background: linear-gradient(0deg, rgb(172, 34, 195) 0%, rgb(93, 45, 253) 100%);
   border-radius: 100%;
-  padding: 2%;
+  padding: 3%;
   color: white;
 }
 
 @-webkit-keyframes movimiento {
-  from {
-    background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
+  0% {
+    background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(135, 36, 160) 100%);
   }
-  to {
-    background: linear-gradient(0deg, rgb(172, 34, 195) 0%, rgb(93, 45, 253) 100%);
+  50% {
+    background: linear-gradient(0deg, rgb(86, 45, 94) 0%, rgb(54, 32, 129) 100%);
+  }
+  100% {
+    background: linear-gradient(0deg, rgb(172, 34, 195) 0%, rgb(141, 134, 161) 100%);
   }
 }
 
 @keyframes movimiento {
-  from {
-    background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
+  0% {
+    background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(135, 36, 160) 100%);
   }
-  to {
-    background: linear-gradient(0deg, rgb(172, 34, 195) 0%, rgb(93, 45, 253) 100%);
+  50% {
+    background: linear-gradient(0deg, rgb(86, 45, 94) 0%, rgb(54, 32, 129) 100%);
+  }
+  100% {
+    background: linear-gradient(0deg, rgb(172, 34, 195) 0%, rgb(141, 134, 161) 100%);
   }
 }/*# sourceMappingURL=style.css.map */
