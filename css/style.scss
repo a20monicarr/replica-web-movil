@@ -70,6 +70,7 @@ footer {
 #parte_2 {
    background-image: url("../resource/img/escritorio.jpg");
    background-size: cover;
+   filter: contrast(50%);
    height: 100vh;
    h2 {
       color: $color-primary;
@@ -114,6 +115,7 @@ footer {
 
 .btn-enviar {
    @extend .btn;
+   padding: auto;
    color: $color-primary;
    background-color: $color-secondary;
 }
@@ -144,7 +146,6 @@ footer {
    border-radius: 15%;
    position: absolute;
    z-index: 2;
-   animation: movimiento 5s ease-in-out infinite;
 }
 .posicion-3 {
    margin: 0;
@@ -157,7 +158,23 @@ footer {
    margin-right: 30%;
    margin-bottom: 40%;
 }
-
+.anime {
+   animation: movimiento 5s ease-in-out infinite;
+}
+.menu {
+   a {
+      text-decoration: none;
+      color: white;
+   }
+}
+.bi-phone,.bi-camera,.bi-gift, .bi-patch-check {
+   font-size: 80px;
+   background :linear-gradient(0deg, rgba(172,34,195,1) 0%,
+   rgba(93,45,253,1) 100%);
+    border-radius: 100%;
+    padding: 2%;
+    color: white;
+}
 // keyframe
 
 @keyframes movimiento {

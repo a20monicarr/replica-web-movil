@@ -59,6 +59,7 @@ footer {
 #parte_2 {
   background-image: url("../resource/img/escritorio.jpg");
   background-size: cover;
+  filter: contrast(50%);
   height: 100vh;
 }
 #parte_2 h2 {
@@ -102,6 +103,7 @@ footer {
 }
 
 .btn-enviar {
+  padding: auto;
   color: white;
   background-color: blue;
 }
@@ -133,8 +135,6 @@ footer {
   border-radius: 15%;
   position: absolute;
   z-index: 2;
-  -webkit-animation: movimiento 5s ease-in-out infinite;
-          animation: movimiento 5s ease-in-out infinite;
 }
 
 .posicion-3 {
@@ -148,6 +148,24 @@ footer {
 .imagen {
   margin-right: 30%;
   margin-bottom: 40%;
+}
+
+.anime {
+  -webkit-animation: movimiento 5s ease-in-out infinite;
+          animation: movimiento 5s ease-in-out infinite;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.bi-phone, .bi-camera, .bi-gift, .bi-patch-check {
+  font-size: 80px;
+  background: linear-gradient(0deg, rgb(172, 34, 195) 0%, rgb(93, 45, 253) 100%);
+  border-radius: 100%;
+  padding: 2%;
+  color: white;
 }
 
 @-webkit-keyframes movimiento {
