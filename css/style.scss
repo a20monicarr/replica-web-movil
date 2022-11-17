@@ -46,12 +46,6 @@ h1 {
    text-align: left;
 }
 
-h2 {
-   color: $color-primary;
-   font-size: 3rem;
-   
-}
-
 h3 {
    text-align: left;
 }
@@ -77,6 +71,11 @@ footer {
    background-image: url("../resource/img/escritorio.jpg");
    background-size: cover;
    height: 100vh;
+   h2 {
+      color: $color-primary;
+      font-size: 3rem;
+      padding-top: 25%;
+   }
 }
 
 #mensaje {
@@ -126,11 +125,14 @@ footer {
    background-color: transparent;
 
 }
-
+.imagen {
+   margin-top: 10%;
+}
 .posicion-1 {
+   margin-right: 50%;
    height: 400px;
    width: 400px;
-   background-color: linear-gradient(45deg, blue, red);
+   background-color: blue;
    border-radius: 100%;
    position: absolute;
    z-index: 1;
@@ -139,9 +141,10 @@ footer {
    margin: 0;
    width: 16%;
    height: 60%;
-   border-radius: 5%;
+   border-radius: 15%;
    position: absolute;
    z-index: 2;
+   animation: movimiento 5s ease-in-out infinite;
 }
 .posicion-3 {
    margin: 0;
@@ -155,3 +158,9 @@ footer {
    margin-bottom: 40%;
 }
 
+// keyframe
+
+@keyframes movimiento {
+  from {background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);}
+  to{ background: linear-gradient(0deg, rgba(172,34,195,1) 0%, rgba(93,45,253,1) 100%); }
+}
